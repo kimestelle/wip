@@ -1,14 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingScreen from './LandingScreen';
-import NodeGraph from './components/NodeGraph';
+import VennDiagram from './components/VennDiagram';
 
-export default function App() {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingScreen />} />
-        <Route path="/visualization" element={<NodeGraph />} />
-      </Routes>
-    </Router>
+    <div style={{ width: '100vw', height: '100vh' }}>
+      <VennDiagram/>
+    </div>
   );
 }
+
+export default App;
